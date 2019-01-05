@@ -19,30 +19,27 @@ public class _01_RobotRace {
 			robs[i].moveTo(100 * i + 100, 500);
 			robs[i].setAngle(0);
 		}
-		// 5. use another for loop to iterate through the array and make each robot move
-		// a random amount less than 50.
-		for (int j = 0; j < robs.length; j++) {
-			int randspeed = new Random().nextInt(50);
-			robs[j].setSpeed(randspeed);
-		}
-		// 6. use a while loop to repeat step 5 until a robot has reached the top of the
-		// screen.
+		// 5. use another for loop to iterate through the array and make each robot move a random amount less than 50
 		for (int i = 0; i < robs.length; i++) {
-			while (robs[i].getY() < 100) {
-				robs[i].move(500);
+			while (robs[i].getY() >=50) {
+			for (int j = 0; j < robs.length; j++) {
+				int randistance = new Random().nextInt(50);
+				robs[i].move(randistance);
+			}
 			}
 		}
-
+		// 6. use a while loop to repeat step 5 until a robot has reached the top of the screen.
+		
+		
 		// 7. declare that robot the winner and throw it a party!
-		for (int i = 0; i < robs.length; i++) {
-			if (robs[i].getY() == 0) {
-				System.out.println("Robot #" + i + " has won! Throw a party!");
-			}
-		}
+//		for (int i = 0; i < robs.length; i++) {
+//			if (robs[i].getY() == 100) {
+//				System.out.println("Robot #" + i + " has won! Throw a party!");
+//			}
+//		}
 		// 8. try different races with different amounts of robots.
 
 		// 9. make the robots race around a circular track.
 
-		robs[3].move(500);
 	}
 }

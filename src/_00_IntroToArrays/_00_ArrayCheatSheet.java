@@ -59,6 +59,6 @@ public class _00_ArrayCheatSheet {
 		System.out.println("Largest #: " + largestnum);
 		System.out.println("");
 		// 12. print only the last element in the array
-		System.out.println(ints[49]);
+		System.out.println("Last #: " + ints[49]);
 	}
 }
