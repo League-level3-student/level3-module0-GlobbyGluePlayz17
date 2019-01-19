@@ -28,6 +28,8 @@ public class _02_FindTheHiddenButton implements ActionListener{
 		window = new JFrame("Find the Button");
 		panel = new JPanel();
 		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		window.pack();
+		
 		
 		//3.  Ask the user to enter a positive number and convert it to an int
 		String userinput = JOptionPane.showInputDialog("Enter a positive number under 250 (unless you want to break the game. DON't).");
