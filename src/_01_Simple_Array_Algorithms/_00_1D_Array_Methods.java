@@ -6,8 +6,7 @@ public class _00_1D_Array_Methods {
 	public static int sumIntArray(int[] values) {
 		int a = 0;
 		for (int i = 0; i < values.length; i++) {
-			int b = values[i] + a;
-			b = a;
+			a = values[i] + a;
 		}
 		return a;
 	}
@@ -17,8 +16,7 @@ public class _00_1D_Array_Methods {
 	public static double averageIntArray(int[] values) {
 		double sum = 0;
 		for (int i = 0; i < values.length; i++) {
-			double b = values[i] + sum;
-			b = sum;
+			sum = values[i] + sum;
 		}
 		return sum/values.length;
 	}
@@ -49,6 +47,7 @@ public class _00_1D_Array_Methods {
 		for (int i = 0; i < arr.length; i++) {
 			if (arr[i] == value) {
 				RETURN = i;
+				break;
 			} else {
 				RETURN = -1;
 			}
